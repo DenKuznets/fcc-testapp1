@@ -33,15 +33,15 @@ jobs:
     - name: Install dependencies
       #Using npm ci is generally faster han unning npm install
       run: |
-        cd fcc-testapp1
+        cd my-app
         npm ci
     - name: Build the app
       run: |
-        cd fcc-testapp1
+        cd my-app
         npm run build
     - name: Run components tests
       run: |
-        cd fcc-testapp1
+        cd my-app
         npm run test
     - name: Start the app
       run: |
